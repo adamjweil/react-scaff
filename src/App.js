@@ -4,11 +4,17 @@ import faker from 'faker';
 import CommentDetail from './CommentDetail';
 import ApprovalCard from './ApprovalCard';
 import Message from './Message';
+import TestComponent from './TestComponent';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
+
     return (
       <div className="ui container comments">
+      <TestComponent />
         <Message
           header="Changes in Service"
           text="We just updated our privacy policy here to better service our customers"
